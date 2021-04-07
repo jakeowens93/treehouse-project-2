@@ -2,7 +2,7 @@
     font-family: 'Mukta', sans-serif;
 }
 .img-responsive {
-    max-width: 65vh;
+    max-width: 60%;
     height: auto;
 }
 .site-header {
@@ -10,7 +10,16 @@
     justify-content: space-between;
     align-items: center;
 }
+.site-nav {
+    order: 2;
+    width:100%;
+}
 /*-- Media Queries--*/
+@media  (max-width:768px){
+    .site-header {
+        flex-wrap: wrap;
+    }
+}
 @media (min-width: 768px) and (max-width: 1023px){
 
 }
