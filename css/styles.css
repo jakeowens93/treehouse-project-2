@@ -33,6 +33,8 @@ nav a {
 .main-nav {
     order: 2;
     width:100%;
+    box-sizing: border-box;
+    padding: 15px;
     justify-content:space-between;
     align-items:center;
     margin: auto;
@@ -73,15 +75,14 @@ footer a:hover {
         display: flex;
         flex-wrap: wrap;
     }
+    ul.main-nav {
+        flex-direction: row;
+    }
 }
 @media (min-width:1024px){
     .main-header, .main-nav {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-    }
-    .main-nav {
-        box-sizing: border-box;
-        padding: 15px;
     }
 }
