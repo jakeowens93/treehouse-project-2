@@ -1,28 +1,87 @@
 *{
     font-family: 'Mukta', sans-serif;
 }
-.img-responsive {
-    max-width: 60%;
-    height: auto;
+/* --------------- Nav Bar-------------- */
+nav ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding-left: 0;
 }
-.site-header {
+nav a {
+    color:black;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+.main-nav a:hover {
+	color: #247fb8;
+}
+
+.main-header {
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
     align-items: center;
+    background-color: rgb(238, 238, 238);
+    margin: auto;
+    text-align: center;
 }
-.site-nav {
+.name {
+    display: block;
+    padding: 10px 15px;
+}
+.main-nav {
     order: 2;
     width:100%;
+    justify-content:space-between;
+    align-items:center;
+    margin: auto;
+    flex: auto;
+    font-size: 1.4rem;
+}
+/* --------------- Body Content-------------- */
+.img-responsive {
+    max-width: 60vw;
+    height: auto;
+}
+div {
+    box-sizing: border-box;
+    margin: 10px;
+    text-align: center;
+}
+/* --------------- Footer-------------- */
+footer {
+    display: flex;
+    justify-content: space-between;
+}
+footer a {
+    color:black;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+footer a:hover {
+	color: #247fb8;
 }
 /*-- Media Queries--*/
 @media  (max-width:768px){
-    .site-header {
+    .main-header {
         flex-wrap: wrap;
     }
 }
 @media (min-width: 768px) and (max-width: 1023px){
-
+    .main-header, .main-nav {
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
 @media (min-width:1024px){
-
+    .main-header, .main-nav {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .main-nav {
+        box-sizing: border-box;
+        padding: 15px;
+    }
 }

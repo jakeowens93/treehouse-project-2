@@ -6,21 +6,24 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-<header class="site-header">
-    <h1>Student Name</h1>
-    <nav class="site-nav">
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Contact</a></li>
+<header>
+    <div class="main-header">
+    <h1 class="name">Student Name</h1>
+    <nav>
+        <ul class="main-nav">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#portfolio">PORTFOLIO</a></li>
+            <li><a href="#contact">CONTACT</a></li>
         </ul>
     </nav>
+    </div>
 </header>
+<div>
     <img src="images/responsive-layout-profile.png" class="img-responsive">
 <p>Hi! I'm a front-end developer who loves responsive design and css.
      I recently finished a degree in front-end web development at Treehouse
     and am excited to put all my skills to use!</p>
-    <h2>Portfolio</h2>
+    <h2 id="portfolio">PORTFOLIO</h2>
     <img src="images/portfolio-1.png" class="img-responsive">
     <h3>Marketing Page</h3>
     <p>This project shows the front page of a marketing website meant for
@@ -45,13 +48,14 @@
     <h3>Calculator</h3>
     <p>Someone can enter in the numbers they want and press the big, blue button to
         get the result.</p>
-    <h2>Contact</h2>
+    <h2 id="contact">CONTACT</h2>
     <p>If you're interested in chatting or want more information about what I've been working
         on, I'd love to hear from you!</p>
     <p>Phone <strong>+1 (111) 555-1234</strong></p>
     <p>Email <strong>email@yoursite.com</strong></p>
+</div>
 </body>
 <footer>
-    Student Name back to top
+    Student Name <a href="#navbar">back to top</a>
     </footer>
 </html>
