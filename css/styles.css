@@ -38,6 +38,7 @@ nav a {
 }
 h1, h2, h3 {
     color:black;
+    font-family: 'Rubik', sans-serif;
 }
 h1 {
     margin: 0px;
@@ -80,8 +81,12 @@ h3 {
     margin: 5px;
 }
 .container1 p,
-.container2 p {
+.container2 p,
+.container3 p{
     font-size: 1.2rem;
+}
+.container3 {
+    text-align: center;
 }
 .avi{
     margin: auto;
