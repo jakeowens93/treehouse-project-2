@@ -38,10 +38,16 @@ nav a {
 }
 h1, h2, h3 {
     color:black;
+}
+h2, h3 {
     font-family: 'Rubik', sans-serif;
 }
 h1 {
     margin: 0px;
+    font-size: 2.5rem;
+    color:Black;
+    font-family: 'Calistoga', cursive;
+    text-shadow: 2px 2px 2px rgb(150, 150, 150 .75);
 }
 h2 {
     text-align: center;
