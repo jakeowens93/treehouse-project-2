@@ -119,6 +119,10 @@ footer, .footer-nav {
     flex-direction:row;
     padding: 10px;
     align-items: center;
+    background-color: rgb(238, 238, 238);
+}
+footer {
+    margin: 0 -20px -20px -20px;
 }
 footer a {
     color:black;
@@ -182,10 +186,11 @@ footer a:hover {
     }
     .main-nav{
         padding: 0 20px 0 0;
+        font-size: 1.2rem;
     }
     .main-header{
         padding: 20px;
-        margin-left: -10px;
+        margin-left: -15px;
     }
     .container1 {
         display: flex;
@@ -194,7 +199,7 @@ footer a:hover {
         box-sizing: border-box;
     }
     .container1 p {
-        padding: 15px;
+        padding: 20px;
     }
     .col {
         flex: 1 50%;
