@@ -47,7 +47,7 @@ h1 {
     font-size: 2.5rem;
     color:Black;
     font-family: 'Calistoga', cursive;
-    text-shadow: 2px 2px 2px rgb(150, 150, 150 .75);
+    text-shadow: 2px 2px 2px rgba(150, 150, 150, 0.644);
 }
 h2 {
     text-align: center;
@@ -74,7 +74,8 @@ h3 {
 }
 
 /* --------------- Body Content-------------- */
-.img-responsive {
+.img-responsive,
+.profile-img {
     width: 60vw;
     max-width: 100%;
     height: auto;
@@ -132,16 +133,12 @@ footer a {
 footer a:hover {
 	color: #247fb8;
 }
-/*--------------- Media Queries--------------*/
-@media  (max-width:768px){
-    .main-header{
-        flex-wrap: wrap;
-    }
-    .footer-nav{
-        display:none;
-    }
+.footer-nav{
+    display:none;
 }
-@media (min-width: 768px) and (max-width: 1023px){
+/*--------------- Media Queries--------------*/
+
+@media (min-width: 768px){
     .main-header, 
     .main-nav , 
     .row {
@@ -159,6 +156,10 @@ footer a:hover {
     }
     .container1 p {
         padding: 15px;
+        text-align: left;
+    }
+    .profile-img{
+        width: 100vw;
     }
     .col {
         flex: 1 50%;
@@ -174,6 +175,9 @@ footer a:hover {
  #backtotop {
      display:none;
  }  
+ .footer-nav{
+    display:flex;
+}
 }
 @media (min-width:1024px){
    
@@ -215,5 +219,8 @@ footer a:hover {
     }
     #backtotop {
         display:none;
+    }
+    .footer-nav{
+        display:flex;
     }
 }
